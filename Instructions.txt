@@ -1,0 +1,10 @@
+git remote add origin https://github.com/AstroEL/PromineoFinal.git
+
+As a team, discuss what you want your final project to be. 
+Write documentation for the enpoints you will have in your API.
+Make sure the documentation is clear and thorough so that you can use it as a checklist when you start coding your project.
+There must be at least 1 full CRUD endpoint for each team member.
+One team member should create a GitHub repository where the final project will eventually go.
+Push the documentation to the repository. Each team member must write the documentation for the endpoints they will be working on.
+Each team member must push their documentation to the repository so that the instructor can see each individaul's contribution.
+Even though each member pushes their own documentation, it must be organized and in a standard format.
