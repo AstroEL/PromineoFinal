@@ -1,0 +1,12 @@
+API Documintation Questions
+
+http verb	endpoint/uri		what it does
+get		api/vi/questions 	return all 
+get		api/vi/questions/(id)	return a specific question
+post 		api/vi/questions	create a new store
+put 		api/vi/questions/(id) 	update a specific question
+delete		api/vi/questions/(id)	delete a specific question
+
+com.promineotech
+
+mvnPromineoFinal
