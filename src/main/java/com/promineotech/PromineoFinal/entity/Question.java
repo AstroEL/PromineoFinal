@@ -1,4 +1,4 @@
-package com.promineotech.mvnPromineoFinal.entity;
+package com.promineotech.PromineoFinal.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

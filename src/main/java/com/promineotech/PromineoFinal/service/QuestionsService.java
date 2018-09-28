@@ -1,10 +1,10 @@
-package com.promineotech.mvnPromineoFinal.service;
+package com.promineotech.PromineoFinal.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.promineotech.mvnPromineoFinal.entity.Question;
-import com.promineotech.mvnPromineoFinal.repository.QuestionRepository;
+import com.promineotech.PromineoFinal.entity.Question;
+import com.promineotech.PromineoFinal.repository.QuestionRepository;
 
 @Service
 public class QuestionsService {
