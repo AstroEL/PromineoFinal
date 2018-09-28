@@ -1,10 +1,10 @@
-package com.promineotech.mvnProject;
+package com.promineotech.mvnPromineoFinal.controllers;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
-@ComponentScan("com.promineotech.mvnProject")
+@ComponentScan("com.promineotech.mvnPromineoFinal")
 @SpringBootApplication
 public class App {
 	public static void main(String[] args) {

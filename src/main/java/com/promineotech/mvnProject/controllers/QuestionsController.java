@@ -1,27 +1,43 @@
-package com.promineotech.mvnProject.controllers;
+package com.promineotech.mvnPromineoFinal.controllers;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.promineotech.mvnPromineoFinal.entity.Question;
+import com.promineotech.mvnPromineoFinal.service.QuestionsService;
+
 @RestController
 public class QuestionsController {
 
-	List<String> questions = new ArrayList<String>();
-
+	@Autowired
+	QuestionsService service;
+	
 	@RequestMapping(value = "/questions", method = RequestMethod.POST)
-	public String addQuestion(@RequestBody String question) {
-		questions.add(question);
-		return "Sucessfully added:" + question;
+	public Question addQuestion(@RequestBody Question question) {
+		return service.createQuestion(question);
 	}
-
+	
 	@RequestMapping("/questions")
-	public List<String> getQuestions() {
-		return questions;
+	public Iterable<Question> getfriends() {
+		return service.getquestions();
 	}
-
+	
+	@RequestMapping(value="/questions/(id)")
+	public Question getQuestion(@PathVariable Long id) {
+		return service.getQuestion(id);
+	}
+	
+	@RequestMapping(value="/questions/(id)", method=RequestMethod.PUT)
+	public Question updateQuestion(@PathVariable Long id, @RequestBody Question question) {
+		return service.updateQuestion(id, question);
+	}
+	
+	@RequestMapping(value="/questions/(id)", method=RequestMethod.DELETE)
+	public void deleteQuestion(@PathVariable Long id) {
+		service.deleteQuestion(id);
+	}
 }
