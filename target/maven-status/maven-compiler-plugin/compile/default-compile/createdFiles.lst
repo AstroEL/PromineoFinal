@@ -1,5 +1,4 @@
 com\promineotech\PromineoFinal\controllers\QuestionsController.class
 com\promineotech\PromineoFinal\repository\QuestionRepository.class
-com\promineotech\PromineoFinal\controllers\App.class
 com\promineotech\PromineoFinal\service\QuestionsService.class
 com\promineotech\PromineoFinal\entity\Question.class

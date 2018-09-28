@@ -1,4 +1,4 @@
-package com.promineotech.PromineoFinal.controllers;
+package com.promineotech.PromineoFinal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
