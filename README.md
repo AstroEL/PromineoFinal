@@ -1,4 +1,4 @@
-# NEW" 
+# NEW
 # Quiz API
 
 ## Endpoints
