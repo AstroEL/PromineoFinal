@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-"# NEW" 
-"# NEW" 
-=======
+# NEW" 
 # Quiz API
 
 ## Endpoints
