@@ -7,6 +7,4 @@ import com.promineotech.PromineoFinal.entity.Question;
 	
 public interface QuestionRepository extends CrudRepository<Question, Long>{
 
-
-
 }
