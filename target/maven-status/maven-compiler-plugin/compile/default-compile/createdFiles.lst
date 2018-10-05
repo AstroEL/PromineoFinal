@@ -1,4 +1,9 @@
+<<<<<<< HEAD
+com\promineotech\mvnProject\App.class
+com\promineotech\mvnProject\controllers\FriendsController.class
+=======
 com\promineotech\PromineoFinal\controllers\QuestionsController.class
 com\promineotech\PromineoFinal\repository\QuestionRepository.class
 com\promineotech\PromineoFinal\service\QuestionsService.class
 com\promineotech\PromineoFinal\entity\Question.class
+>>>>>>> 37de41d5ebad167ac147b7a5bc6614a79d5e889d
