@@ -1,16 +1,21 @@
+package com.promineotech.PromineoFinal.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
 public class User {
 
 	private Long id;
-	private Long class_Id;
+	private Long class_id;
 	private String firstName;
 	private String lastName;
 	
 	
 	@Id
-	@GeneratedValue(stategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	public Long getId() {
 		return id;
 	}
@@ -18,29 +23,29 @@ public class User {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	
-	public String getFirstName(String firstName) {
-		this.firstName = firstName;
+
+	public String getFirstName() {
+		return firstName;
 	}
-	
+
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
 	
-	public String getLastName(String lastName) {
-		this.lastName = lastName;
+	public String getLastName() {
+		return lastName;
 	}
 	
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
 	
-	public Long getClass_Id() {
-		return class_Id; 
+	public Long getClass_id() {
+		return class_id; 
 	}
 	
-	public void setClass_Id(Long class_Id) {
-		this.class_Id = class_Id;
+	public void setClass_id(Long class_id) {
+		this.class_id = class_id;
 	}
 
 }
