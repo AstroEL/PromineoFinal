@@ -23,4 +23,12 @@
 |POST|/api/users|Create a new user|
 
 
-
+### Quizzes
+| Method | URI | Description |
+|---|---|---|
+|GET|/api/quizzes|Gets all quizzes|
+|GET|/api/quizzes{id}|Gets one quiz|
+|GET|/api/quizzes/{userid}|Gets quizzes by user id|
+|POST|/api/quizzes|Create new quiz|
+|PUT|/api/quizzes/{id}|Create new quiz|
+|DELETE|/api/quizzes/{id}|Deletes a quiz|
