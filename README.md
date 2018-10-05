@@ -8,6 +8,9 @@
 |---|---|---|
 |GET|/api/questions|Retrieves all questions|
 |GET|/api/questions/{id}|Retrieves a single question by id|
+|POST|api/questions|create a new question|
+|PUT|api/questions/{id}|update a specific question|
+|DELETE|api/questions/{id}delete a specific question|
 
 
 ### Users
