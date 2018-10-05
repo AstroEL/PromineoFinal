@@ -25,6 +25,7 @@
 
 
 	<classpathentry kind="lib" path="C:/Users/suwyn/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar">
+
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 			<attribute name="maven.groupId" value="org.hibernate.javax.persistence"/>
@@ -33,6 +34,7 @@
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
+
 	<classpathentry kind="src" path="/product-service"/>
 
 	<classpathentry kind="output" path="target/classes"/>
