@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-"# NEW" 
-"# NEW" 
-=======
+# NEW
 # Quiz API
 
 ## Endpoints
@@ -12,4 +9,15 @@
 |GET|/api/questions|Retrieves all questions|
 |GET|/api/questions/{id}|Retrieves a single question by id|
 
->>>>>>> 37de41d5ebad167ac147b7a5bc6614a79d5e889d
+
+### Users
+| Method | URI | Description |
+|---|---|---|
+|GET|/api/users|Retrieves all users|
+|GET|/api/users{class_id}|Retrieves all users for a specific class by class_id|
+|PUT|/api/users{id}|Update a specific user by user id|
+|DELETE|/api/users{id}|Delete a specific user by user id|
+|POST|/api/users|Create a new user|
+
+
+

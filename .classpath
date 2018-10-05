@@ -22,6 +22,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
 	<classpathentry kind="lib" path="C:/Users/kmacd/.m2/repository/org/springframework/data/spring-data-commons/1.9.3.RELEASE/spring-data-commons-1.9.3.RELEASE.jar">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
@@ -32,6 +33,12 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/kmacd/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar">
+=======
+
+
+	<classpathentry kind="lib" path="C:/Users/suwyn/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar">
+
+>>>>>>> 3c742a90a1e86bce36c50eeee1453999503e10b8
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 			<attribute name="maven.groupId" value="org.hibernate.javax.persistence"/>
@@ -40,6 +47,7 @@
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
 	<classpathentry kind="lib" path="C:/Users/kmacd/.m2/repository/org/springframework/spring-context/4.1.7.RELEASE/spring-context-4.1.7.RELEASE.jar">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
@@ -86,5 +94,10 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
+=======
+
+	<classpathentry kind="src" path="/product-service"/>
+
+>>>>>>> 3c742a90a1e86bce36c50eeee1453999503e10b8
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
