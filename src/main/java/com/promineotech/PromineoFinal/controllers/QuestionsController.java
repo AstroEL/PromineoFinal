@@ -16,7 +16,7 @@ public class QuestionsController {
 	@Autowired
 	QuestionsService service;
 	
-	@RequestMapping(value = "/questions", method = RequestMethod.POST)
+	@RequestMapping(value="/questions", method = RequestMethod.POST)
 	public Question addQuestion(@RequestBody Question question) {
 		return service.createQuestion(question);
 	}
