@@ -13,15 +13,6 @@
 |DELETE|api/questions/{id}|delete a specific question|
 
 
-### Favorite Questions
-| Method | URI | Description |
-|---|---|---|
-|GET|/api/favoriteQuestions|Retrieves all favorite questions|
-|GET|/api/favoriteQuestion/{id}|Retrieves a single question by id|
-|POST|api/favoriteQuestion|Create a new favorite question|
-|DELETE|api/favoriteQuestion/{id}|Delete a specific favorite question by id|
-
-
 ### Users
 | Method | URI | Description |
 |---|---|---|
