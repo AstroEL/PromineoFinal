@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.promineotech.mvnProject.AppTest
 -------------------------------------------------------------------------------
-<<<<<<< HEAD
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.promineotech.mvnProject.AppTest
-=======
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in com.promineotech.mvnProject.AppTest
->>>>>>> 37de41d5ebad167ac147b7a5bc6614a79d5e889d
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.promineotech.mvnProject.AppTest

@@ -35,9 +35,9 @@
 ### Quizzes
 | Method | URI | Description |
 |---|---|---|
-|GET|/api/quizzes|Gets all quizzes|
-|GET|/api/quizzes{id}|Gets one quiz|
-|GET|/api/quizzes/{user_id}|Gets quizzes by user id|
-|POST|/api/quizzes|Create new quiz|
-|PUT|/api/quizzes/{id}|Create new quiz|
+|GET|/api/quizzes|Retrieves all quizzes|
+|GET|/api/quizzes{id}|Retrieves one quiz|
+|GET|/api/quizzes/{user_id}|Retrieves quizzes by user id|
+|POST|/api/quizzes|Create a new quiz|
+|PUT|/api/quizzes/{id}|Update a quiz by id|
 |DELETE|/api/quizzes/{id}|Deletes a quiz|
