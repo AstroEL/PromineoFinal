@@ -9,7 +9,6 @@ import javax.persistence.Id;
 public class User {
 
 	private Long id;
-	private Long class_id;
 	private String firstName;
 	private String lastName;
 	
@@ -40,12 +39,5 @@ public class User {
 		this.lastName = lastName;
 	}
 	
-	public Long getClass_id() {
-		return class_id; 
-	}
-	
-	public void setClass_id(Long class_id) {
-		this.class_id = class_id;
-	}
 
 }

@@ -24,12 +24,6 @@ public class UsersController {
 		return service.getUsers();
 	}
 	
-	//Retrieve all users of a specific class/cohort
-	@RequestMapping(value="/users/{class_id}")
-	public Iterable<User> getUserByClassId(@PathVariable Iterable<Long> class_id) {
-		return service.getUsersByClassId(class_id);
-	}
-	
 	//Retrieve user by a specific user id
 	@RequestMapping(value="/users/{id}") 								
 	public User getUserById(@PathVariable Long id) {

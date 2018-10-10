@@ -4,13 +4,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.promineotech.PromineoFinal.entity.User;
-import com.promineotech.PromineoFinal.repository.UserRepository;
+import com.promineotech.PromineoFinal.repository.UsersRepository;
 
 @Service
 public class UsersService {
 	
 	@Autowired
-	UserRepository repo;
+	UsersRepository repo;
 	
 	public User getUser(Long id) {
 		return repo.findOne(id);
@@ -18,10 +18,6 @@ public class UsersService {
 	
 	public Iterable<User> getUsers() {
 		return repo.findAll();
-	}
-	
-	public Iterable<User> getUsersByClassId(Iterable<Long> class_id) {
-		return repo.findAll(class_id);
 	}
 	
 	public User getUserById(Long id) {
@@ -37,7 +33,6 @@ public class UsersService {
 		if (foundUser != null) {
 			foundUser.setFirstName(user.getFirstName());		
 			foundUser.setLastName(user.getLastName());
-			foundUser.setClass_id(user.getClass_id());
 			repo.save(foundUser);
 		}
 		return foundUser;
