@@ -1,6 +1,9 @@
 package com.promineotech.PromineoFinal.repository;
 
-public class QuizRepository {
+import org.springframework.data.repository.CrudRepository;
 
-	
+import com.promineotech.PromineoFinal.entity.Quiz;
+
+public interface QuizRepository extends CrudRepository<Quiz, Long>{
+
 }
