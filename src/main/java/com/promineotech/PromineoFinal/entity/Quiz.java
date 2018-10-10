@@ -1,5 +1,6 @@
 package com.promineotech.PromineoFinal.entity;
 
+
 import java.util.Set;
 
 import javax.persistence.*;
@@ -7,43 +8,47 @@ import javax.persistence.*;
 
 @Entity
 public class Quiz {
-	
-	private Long id;
-	private String name;
-	private Set<Quiz> quizzes;
+    
+    private Long id;
+    private String name;
+    private Set<String> quizzes;
 
-	
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	public Long getId() {
-		return id;
-	}
+    
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    public Long getId() {
+        return id;
+    }
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	@ManyToMany()
+    @ManyToMany(cascade = {
+            CascadeType.PERSIST,
+            CascadeType.MERGE
+        })
     @JoinTable(name = "user", 
-    			joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"), 
-    			inverseJoinColumns = @JoinColumn(name = "question_id", referencedColumnName = "id"))
+                joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"), 
+                inverseJoinColumns = @JoinColumn(name = "question_id", referencedColumnName = "id"))
 
-	public Set<Quiz> getQuizzes() {
-		return quizzes;
-	}
+    public Set<String> getQuizzes() {
+        return quizzes;
+    }
 
-	public void setQuizzes(Set<Quiz> quizzes) {
-		this.quizzes = quizzes;
-	}
-	
-	
+    public void setQuizzes(Set<String> quizzes) {
+        this.quizzes = quizzes;
+    }
+    
+    
 
 }
+
