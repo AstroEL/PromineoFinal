@@ -1,4 +1,16 @@
+<<<<<<< HEAD
 com\promineotech\PromineoFinal\controllers\QuestionsController.class
 com\promineotech\PromineoFinal\repository\QuestionRepository.class
 com\promineotech\PromineoFinal\service\QuestionsService.class
 com\promineotech\PromineoFinal\entity\Question.class
+=======
+com/promineotech/PromineoFinal/controllers/UsersController.class
+com/promineotech/PromineoFinal/service/QuestionsService.class
+com/promineotech/PromineoFinal/App.class
+com/promineotech/PromineoFinal/service/UsersService.class
+com/promineotech/PromineoFinal/controllers/QuestionsController.class
+com/promineotech/PromineoFinal/entity/User.class
+com/promineotech/PromineoFinal/repository/QuestionRepository.class
+com/promineotech/PromineoFinal/repository/UserRepository.class
+com/promineotech/PromineoFinal/entity/Question.class
+>>>>>>> f71f35bf230dce98e5332525ae09884ec909630a
