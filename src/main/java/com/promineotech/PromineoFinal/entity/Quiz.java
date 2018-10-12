@@ -11,7 +11,7 @@ public class Quiz {
     
     private Long id;
     private String name;
-    private Set<String> quizzes;
+    private Set<Question> questions;
 
     
     @Id
@@ -36,17 +36,19 @@ public class Quiz {
             CascadeType.PERSIST,
             CascadeType.MERGE
         })
-    @JoinTable(name = "user", 
-                joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"), 
-                inverseJoinColumns = @JoinColumn(name = "question_id", referencedColumnName = "id"))
+    
+    @JoinTable(name = "quiz_questions", 
+                joinColumns = @JoinColumn(name = "question_id", referencedColumnName = "id"), 
+                inverseJoinColumns = @JoinColumn(name = "quiz_id", referencedColumnName = "id"))
 
-    public Set<String> getQuizzes() {
-        return quizzes;
-    }
+    
+	public Set<Question> getQuestions() {
+		return questions;
+	}
 
-    public void setQuizzes(Set<String> quizzes) {
-        this.quizzes = quizzes;
-    }
+	public void setQuestions(Set<Question> quizzes) {
+		this.questions = quizzes;
+	}
     
     
 
