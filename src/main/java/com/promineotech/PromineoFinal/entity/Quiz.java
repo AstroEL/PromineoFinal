@@ -36,19 +36,20 @@ public class Quiz {
             CascadeType.PERSIST,
             CascadeType.MERGE
         })
+   
     @JoinTable(name = "quiz_questions", 
-                joinColumns = @JoinColumn(name = "questions_id", referencedColumnName = "id"), 
+                joinColumns = @JoinColumn(name = "question_id", referencedColumnName = "id"), 
                 inverseJoinColumns = @JoinColumn(name = "quiz_id", referencedColumnName = "id"))
 
-    public Set<Question> getQuestions() {
-        return questions;
-    }
-
-    public void setQuestions(Set<Question> quizzes) {
+	
+	public Set<Question> getQuestions() {
+		return questions;
+	}
+	
+	public void setQuestions(Set<Question> quizzes) {
         this.questions = quizzes;
     }
+  
+  
     
-    
-
 }
-

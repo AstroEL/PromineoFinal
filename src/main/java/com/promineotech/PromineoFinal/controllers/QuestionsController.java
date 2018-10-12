@@ -26,17 +26,17 @@ public class QuestionsController {
 		return service.getquestions();
 	}
 	
-	@RequestMapping(value="/questions/(id)")
+	@RequestMapping(value="/questions/{id}")
 	public Question getQuestion(@PathVariable Long id) {
 		return service.getQuestion(id);
 	}
 	
-	@RequestMapping(value="/questions/(id)", method=RequestMethod.PUT)
+	@RequestMapping(value="/questions/{id}", method=RequestMethod.PUT)
 	public Question updateQuestion(@PathVariable Long id, @RequestBody Question question) {
 		return service.updateQuestion(id, question);
 	}
 	
-	@RequestMapping(value="/questions/(id)", method=RequestMethod.DELETE)
+	@RequestMapping(value="/questions/{id}", method=RequestMethod.DELETE)
 	public void deleteQuestion(@PathVariable Long id) {
 		service.deleteQuestion(id);
 	}
