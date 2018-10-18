@@ -9,9 +9,10 @@ import javax.persistence.Id;
 public class User {
 
 	private Long id;
-	private Long class_id;
 	private String firstName;
 	private String lastName;
+	private String userName;
+	private String password;
 	
 	
 	@Id
@@ -39,13 +40,22 @@ public class User {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	
-	public Long getClass_id() {
-		return class_id; 
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	
-	public void setClass_id(Long class_id) {
-		this.class_id = class_id;
-	}
 
 }
