@@ -13,38 +13,37 @@ import com.promineotech.PromineoFinal.service.UsersService;
 @RestController
 public class UsersController {
 
-	 
-	
 	@Autowired
 	UsersService service;
-	
-	//Retrieve all users
-	@RequestMapping("/users") 	
+
+	// Retrieve all users
+	@RequestMapping("/users")
 	public Iterable<User> getUsers() {
 		return service.getUsers();
 	}
-	
-	//Retrieve user by a specific user id
-	@RequestMapping(value="/users/{id}") 								
+
+	// Retrieve user by a specific user id
+	@RequestMapping(value = "/users/{id}")
 	public User getUserById(@PathVariable Long id) {
 		return service.getUserById(id);
 	}
-	
-	//Update a specific user by user id
-	@RequestMapping(value="/users/{id}", method=RequestMethod.PUT)  	
+
+	// Update a specific user by user id
+	@RequestMapping(value = "/users/{id}", method = RequestMethod.PUT)
 	public User updateUser(@RequestBody User user, @PathVariable Long id) {
 		return service.updateUser(id, user);
 	}
-	
-	//Delete a specific user by user id
-	@RequestMapping(value="/users/{id}", method=RequestMethod.DELETE)  
+
+	// Delete a specific user by user id
+	@RequestMapping(value = "/users/{id}", method = RequestMethod.DELETE)
 	public void deleteUser(@PathVariable Long id) {
 		service.deleteUser(id);
 	}
-	
-	//Create a new user
-	@RequestMapping(value="/users", method=RequestMethod.POST)  	 	
+
+	// Create a new user
+	@RequestMapping(value = "/users", method = RequestMethod.POST)
 	public User addUser(@RequestBody User user) {
 		return service.addUser(user);
 	}
+	
 }

@@ -29,7 +29,7 @@ public class QuizService {
 		Quiz foundQuiz = repo.findOne(id);
 		if (foundQuiz != null) {
 			foundQuiz.setName(quiz.getName());
-			foundQuiz.setQuizzes(quiz.getQuizzes());
+			foundQuiz.setQuestions(quiz.getQuestions());
 			repo.save(foundQuiz);
 			
 		}
