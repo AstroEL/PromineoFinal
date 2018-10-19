@@ -4,10 +4,12 @@
 /Users/kirstennaughton/Dropbox/PromineoTech/PromineoFinal/src/main/java/com/promineotech/PromineoFinal/repository/QuizRepository.java
 /Users/kirstennaughton/Dropbox/PromineoTech/PromineoFinal/src/main/java/com/promineotech/PromineoFinal/service/QuestionsService.java
 /Users/kirstennaughton/Dropbox/PromineoTech/PromineoFinal/src/main/java/com/promineotech/PromineoFinal/repository/UsersRepository.java
+/Users/kirstennaughton/Dropbox/PromineoTech/PromineoFinal/src/main/java/com/promineotech/PromineoFinal/entity/Answer.java
 /Users/kirstennaughton/Dropbox/PromineoTech/PromineoFinal/src/main/java/com/promineotech/PromineoFinal/repository/QuestionRepository.java
 /Users/kirstennaughton/Dropbox/PromineoTech/PromineoFinal/src/main/java/com/promineotech/PromineoFinal/entity/Quiz.java
 /Users/kirstennaughton/Dropbox/PromineoTech/PromineoFinal/src/main/java/com/promineotech/PromineoFinal/controllers/UsersController.java
 /Users/kirstennaughton/Dropbox/PromineoTech/PromineoFinal/src/main/java/com/promineotech/PromineoFinal/controllers/QuestionsController.java
 /Users/kirstennaughton/Dropbox/PromineoTech/PromineoFinal/src/main/java/com/promineotech/PromineoFinal/entity/User.java
 /Users/kirstennaughton/Dropbox/PromineoTech/PromineoFinal/src/main/java/com/promineotech/PromineoFinal/service/QuizService.java
+/Users/kirstennaughton/Dropbox/PromineoTech/PromineoFinal/src/main/java/com/promineotech/PromineoFinal/request/QuizSubmission.java
 /Users/kirstennaughton/Dropbox/PromineoTech/PromineoFinal/src/main/java/com/promineotech/PromineoFinal/controllers/QuizController.java
