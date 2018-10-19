@@ -7,7 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.promineotech.PromineoFinal.entity.Quiz;
 import com.promineotech.PromineoFinal.entity.User;
+import com.promineotech.PromineoFinal.service.QuizService;
 import com.promineotech.PromineoFinal.service.UsersService;
 
 @RestController
@@ -15,6 +17,9 @@ public class UsersController {
 
 	@Autowired
 	UsersService service;
+	
+	@Autowired
+	QuizService quizService;
 
 	// Retrieve all users
 	@RequestMapping("/users")
@@ -42,8 +47,18 @@ public class UsersController {
 
 	// Create a new user
 	@RequestMapping(value = "/users", method = RequestMethod.POST)
-	public User addUser(@RequestBody User user) {
+	public User register(@RequestBody User user) {
 		return service.addUser(user);
+	}
+	
+	@RequestMapping(value="/users/login", method=RequestMethod.POST)
+	public User login(@RequestBody User user) {
+		return service.login(user);
+	}
+	
+	@RequestMapping("/users/{id}/quizzes")
+	public Iterable<Quiz> getQuizzesByUserId(@PathVariable Long id) {
+		return quizService.getQuizzesByUserId(id);
 	}
 	
 }

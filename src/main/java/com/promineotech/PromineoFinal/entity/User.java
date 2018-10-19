@@ -1,9 +1,12 @@
 package com.promineotech.PromineoFinal.entity;
 
+import java.util.Set;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class User {
@@ -13,6 +16,7 @@ public class User {
 	private String lastName;
 	private String userName;
 	private String password;
+	private Set<Quiz> quizzes;
 	
 	
 	@Id
@@ -56,6 +60,14 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	@OneToMany(mappedBy= "user")
+	public Set<Quiz> getQuizzes() {
+		return quizzes;
+	}
 	
+	public void setQuizzes(Set<Quiz> quizzes) {
+		this.quizzes=quizzes;
+	}
 
 }

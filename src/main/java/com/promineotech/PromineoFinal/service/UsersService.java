@@ -1,5 +1,7 @@
 package com.promineotech.PromineoFinal.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -40,6 +42,14 @@ public class UsersService {
 
 	public User addUser(User user) {
 		return repo.save(user);
+	}
+
+	public User login(User user) {
+		List<User> foundUsers = repo.findUsersByUserNameAndPassword(user.getUserName(), user.getPassword());
+		if (foundUsers.isEmpty()) {
+			return null;
+		}
+		return foundUsers.get(0);
 	}
 
 	
