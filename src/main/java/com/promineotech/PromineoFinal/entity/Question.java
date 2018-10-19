@@ -7,6 +7,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.*;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 
 @Entity
 public class Question {
@@ -14,6 +16,8 @@ public class Question {
 	private Long id;
 	private String questionData;
 	private String answerData;
+	
+	@JsonIgnore
 	private Set<Quiz> quizzes;
 	
 	
@@ -43,7 +47,7 @@ public class Question {
 		this.answerData = answerData;
 	}
 
-	@OneToMany(mappedBy = "questions")
+	@ManyToMany(mappedBy = "questions")
 	public Set<Quiz> getQuizzes() {
 		return quizzes;
 	}

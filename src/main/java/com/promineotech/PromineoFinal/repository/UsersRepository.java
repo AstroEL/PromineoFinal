@@ -8,6 +8,6 @@ import com.promineotech.PromineoFinal.entity.User;
 
 public interface UsersRepository extends CrudRepository<User, Long>{
 
-	public List<User> findUsersByUsernameAndPassword(String username, String password);
+	public List<User> findUsersByUserNameAndPassword(String username, String password);
 	
 }
