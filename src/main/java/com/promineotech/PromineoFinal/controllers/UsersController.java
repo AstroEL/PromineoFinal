@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.promineotech.PromineoFinal.entity.User;
 import com.promineotech.PromineoFinal.service.UsersService;
 
+
+//most of this is admin flow
 @RestController
 public class UsersController {
 
