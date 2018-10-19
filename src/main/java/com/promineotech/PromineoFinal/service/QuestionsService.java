@@ -28,7 +28,7 @@ public class QuestionsService {
 		Question foundQuestion = repo.findOne(id);
 		if (foundQuestion != null) {
 			foundQuestion.setQuestionData(question.getQuestionData());
-			foundQuestion.setQuestionData(question.getAnswerData());
+			foundQuestion.setAnswerData(question.getAnswerData());
 			repo.save(foundQuestion);		
 		}
 		return foundQuestion;
