@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.promineotech.PromineoFinal.entity.Quiz;
+import com.promineotech.PromineoFinal.request.QuizSubmission;
 import com.promineotech.PromineoFinal.service.QuizService;
 
 
