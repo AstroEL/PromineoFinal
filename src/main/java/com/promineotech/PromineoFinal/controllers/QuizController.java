@@ -30,9 +30,20 @@ public class QuizController {
         return service.getQuizzes();
     }
     
+       
     @RequestMapping("/quizzes/{id}")
     public Quiz getQuizById(@PathVariable Long id) {
     	return service.getQuiz(id);
+    }
+    
+    @RequestMapping(value="/quizzes/{id}", method=RequestMethod.PUT)
+    public Quiz updateQuiz(@PathVariable Long id, @RequestBody Quiz quiz) {
+    	return service.updateQuiz(id, quiz);
+    }
+    
+    @RequestMapping(value="/quizzes/{id}", method=RequestMethod.DELETE)
+    public void deleteQuiz(@PathVariable Long id) {
+    	service.deleteQuiz(id);
     }
     
     @RequestMapping("/quizzes/{id}/take")
