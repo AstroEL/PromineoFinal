@@ -1,12 +1,14 @@
 package com.promineotech.PromineoFinal.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.promineotech.PromineoFinal.entity.Quiz;
+import com.promineotech.PromineoFinal.request.QuizSubmission;
 import com.promineotech.PromineoFinal.service.QuizService;
 
 
@@ -28,6 +30,14 @@ public class QuizController {
         return service.getQuizzes();
     }
     
+    @RequestMapping("/quizzes/{id}")
+    public Quiz getQuizById(@PathVariable Long id) {
+    	return service.getQuiz(id);
+    }
     
+    @RequestMapping("/quizzes/{id}/take")
+    public double takeQuiz(@PathVariable Long id, @RequestBody QuizSubmission submission) {
+    	return service.gradeQuiz(id, submission);
+    }
     
 }

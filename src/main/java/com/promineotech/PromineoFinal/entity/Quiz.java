@@ -5,6 +5,8 @@ import java.util.Set;
 
 import javax.persistence.*;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 
 @Entity
 public class Quiz {
@@ -13,6 +15,9 @@ public class Quiz {
     private String name;
     private Set<Question> questions;
 
+    
+    @JsonIgnore
+    private User user;
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -49,6 +54,16 @@ public class Quiz {
 	public void setQuestions(Set<Question> quizzes) {
         this.questions = quizzes;
     }
+	
+	@ManyToOne
+	@JoinColumn(name="userId")
+	public User getUser() {
+		return user;
+	}
+	
+	public void setUser(User user) {
+		this.user = user;
+	}
   
   
     
