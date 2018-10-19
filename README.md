@@ -20,6 +20,7 @@
 |PUT|/api/users{id}|Update a specific user by user id|
 |DELETE|/api/users{id}|Delete a specific user by user id|
 |POST|/api/users|Create a new user|
+|POST|/api/users/login|Returns valid user|
 
 
 ### Quizzes

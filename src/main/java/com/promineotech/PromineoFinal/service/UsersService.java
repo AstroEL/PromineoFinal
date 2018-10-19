@@ -35,6 +35,7 @@ public class UsersService {
 		if (foundUser != null) {
 			foundUser.setFirstName(user.getFirstName());
 			foundUser.setLastName(user.getLastName());
+			foundUser.setUserName(user.getUserName());
 			repo.save(foundUser);
 		}
 		return foundUser;
